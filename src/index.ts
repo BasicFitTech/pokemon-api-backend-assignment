@@ -21,8 +21,9 @@ const main = async (): Promise<void> => {
   const data: { pokemon: PokemonData[] } = await body.json();
   await fs.writeFile(`pokemon_${type}.json`, JSON.stringify(data, null, 2));
 
-  // TODO: count pokemon of a type
+  // TODO: count pokemon of dragon type
   // TODO: count pokemon of that type from 3rd Gen
+  // TODO: print them to the console in numerical order
   // TODO: how many can learn 'incinerate'?
   // TODO: how many can learn 'hyper-beam'?
   // TODO: how many can learn both?
